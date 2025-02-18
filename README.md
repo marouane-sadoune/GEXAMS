@@ -1,2 +1,2 @@
 # GEXAMS
-gestionner des exams des etudiants
+gestionner des exams des etudiants et leur note 
