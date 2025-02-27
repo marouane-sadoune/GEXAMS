@@ -53,8 +53,8 @@ final class EtudiantsFactory extends PersistentProxyObjectFactory{
         return [
             'CNE' => self::faker()->text(15),
             'adresse' => self::faker()->text(255),
-            'nom' => self::faker()->text(50),
-            'prenom' => self::faker()->text(50),
+            'nom' => self::faker()->lastName(),
+            'prenom' => self::faker()->firstName(),
         ];
     }
 
