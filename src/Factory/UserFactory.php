@@ -51,13 +51,12 @@ final class UserFactory extends PersistentProxyObjectFactory{
     protected function defaults(): array|callable
     {
         return [
-            'CNE' => self::faker()->text(15),
-            'adresse' => self::faker()->text(255),
-            'nom' => self::faker()->text(50),
-            'prenom' => self::faker()->text(50),
-        ];
+            'email' => 'admin@SupMTI.ma',
+            'roles' => ['ROLE_ADMIN'],
+            'password' => '$2y$13$w7usfxJhm1MP8qjT8TDNzOq.UuYWFuZszfwqX/agMwG8JeqWgacZ.',
+            'username' => 'Admin',
+        ]; 
     }
-
     /**
      * @see https://symfony.com/bundles/ZenstruckFoundryBundle/current/index.html#initialization
      */
