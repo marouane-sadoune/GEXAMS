@@ -51,7 +51,7 @@ final class NoteFactory extends PersistentProxyObjectFactory{
     protected function defaults(): array|callable
     {
         return [
-            'etudiants' => aaa::new(),
+            'etudiants' => SemestreFactory::new(),
             'module' => null, // TODO add App\Entity\module type manually
             'note' => self::faker()->randomFloat(),
         ];
