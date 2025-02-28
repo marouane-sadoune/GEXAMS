@@ -51,7 +51,7 @@ final class FilierFactory extends PersistentProxyObjectFactory{
     protected function defaults(): array|callable
     {
         return [
-            'nom' => self::faker()->text(42),
+            'nom' => self::faker()->realText(20),
         ];
     }
 

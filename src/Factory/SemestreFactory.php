@@ -51,7 +51,7 @@ final class SemestreFactory extends PersistentProxyObjectFactory{
     protected function defaults(): array|callable
     {
         return [
-            'nom' => self::faker()->text(42),
+            'nom' => self::faker()->realText(42),
         ];
     }
 
