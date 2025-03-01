@@ -53,7 +53,7 @@ final class ModuleFactory extends PersistentProxyObjectFactory{
     {
         return [
             'ensiegnant' => FFactory::new(),
-            'filier' => no::new(),
+            'filier' => FilierFactory::randomOrCreate(),
             'module' => self::faker()->text(60),
             'semestre' => null, // TODO add App\Entity\semestre type manually
         ];
