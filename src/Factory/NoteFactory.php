@@ -2,6 +2,7 @@
 
 namespace App\Factory;
 
+use App\Entity\Etudiants;
 use App\Entity\Note;
 use App\Repository\NoteRepository;
 use Doctrine\ORM\EntityRepository;
@@ -51,9 +52,10 @@ final class NoteFactory extends PersistentProxyObjectFactory{
     protected function defaults(): array|callable
     {
         return [
-            'etudiants' => SemestreFactory::new(),
-            'module' => null, // TODO add App\Entity\module type manually
             'note' => self::faker()->randomFloat(),
+            'observation' => self::faker()->randomFloat(),
+            'etudiants' => EtudiantsFactory::randomOrCreate(),
+            'module' => EtudiantsFactory::randomOrCreate(), // TODO add App\Entity\module type manually
         ];
     }
 
