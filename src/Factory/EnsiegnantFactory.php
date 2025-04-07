@@ -51,7 +51,7 @@ final class EnsiegnantFactory extends PersistentProxyObjectFactory{
     protected function defaults(): array|callable
     {
         return [
-            'cin' => self::faker()->realText(10),
+            'cin' => self::faker()->realText(14),
             'nom' => self::faker()->lastName(),
             'prenom' => self::faker()->firstName(),
         ];
