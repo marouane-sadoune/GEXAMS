@@ -55,7 +55,7 @@ final class NoteFactory extends PersistentProxyObjectFactory{
             'note' => self::faker()->randomFloat(),
             'observation' => self::faker()->randomFloat(),
             'etudiants' => EtudiantsFactory::randomOrCreate(),
-            'module' => EtudiantsFactory::randomOrCreate(), // TODO add App\Entity\module type manually
+            'module' => EtudiantsFactory::randomOrCreate(), // TODO add App\Entity\module  type manually
         ];
     }
 
