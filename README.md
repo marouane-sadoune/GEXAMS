@@ -12,7 +12,7 @@ Application web de gestion d'examens développée avec Symfony 6.
 
 - 🛡️ Authentification sécurisée (JWT) avec rôles Admin/User
 - 📊 Dashboard admin (CRUD étudiants/filières)
-- 🌍 Support multilingue (Français/Anglais/Arabe/Espagnol)
+- 🌍 Support multilingue (Français/Anglais/Arabe)
 - 🔄 Fixtures automatisées avec Foundry
 - 📝 Gestion des entités Doctrine
 - 🎨 Frontend moderne avec Bootstrap + Webpack Encore
