@@ -60,7 +60,7 @@ Accéder à l'application : [https://127.0.0.1:8000](https://127.0.0.1:8000)
 - **URL Admin** : `/admin`
 - **Compte test** :
   ```
-  Email: admin@fac.ma
+  Email: admin@SupMTI.ma
   Password: admin123
   ```
 
